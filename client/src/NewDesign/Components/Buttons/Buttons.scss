@@ -1,0 +1,154 @@
+@import '../../colors/colors.scss';
+
+.btn {
+	border-radius: 100px;
+	border: none;
+
+	&.less-radius {
+		border-radius: 10px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+
+.btn--primary {
+	background: $primary;
+	color: white;
+}
+
+.btn--primaryBlue {
+	background: $primaryBlue;
+	color: white;
+	border-radius: 100px;
+	border: none;
+	padding: 14px 30px;
+	text-decoration: none;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 27px;
+	margin-right: 10px;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	outline: none;
+
+	&.less-radius {
+		border-radius: 10px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	&:hover {
+		color: #fff;
+		transform: translateY(-8px);
+	}
+}
+
+.btn--primaryGreen {
+	background: $primaryGreen;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 27px;
+	letter-spacing: 0.2px;
+	color: #ffffff;
+	border-radius: 100px;
+	border: none;
+	padding: 14px 30px;
+	text-decoration: none;
+	margin-right: 10px;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	outline: none;
+
+	&.less-radius {
+		border-radius: 10px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	&:hover {
+		color: #fff;
+		transform: translateY(-8px);
+	}
+}
+.btn--primaryRed {
+	background: $primaryRed;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 27px;
+	letter-spacing: 0.2px;
+	color: #ffffff;
+	border-radius: 100px;
+	border: none;
+	padding: 14px 30px;
+	text-decoration: none;
+	margin-right: 10px;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	outline: none;
+
+	&.less-radius {
+		border-radius: 10px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	&:hover {
+		color: #fff;
+		transform: translateY(-8px);
+	}
+}
+
+.btn--primaryOrange {
+	background: $primaryOrange;
+	color: white;
+	border-radius: 100px;
+	border: none;
+	padding: 14px 30px;
+	text-decoration: none;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 27px;
+	margin-right: 10px;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	outline: none;
+
+	&.less-radius {
+		border-radius: 10px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	&:hover {
+		color: #fff;
+		transform: translateY(-8px);
+	}
+}
+
+.left-icon {
+	width: 18px;
+	margin-right: 5px;
+}
+
+.right-icon {
+	width: 18px;
+	margin-top: -2px;
+	margin-left: 5px;
+}

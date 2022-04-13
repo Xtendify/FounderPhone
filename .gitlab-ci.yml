@@ -1,0 +1,58 @@
+image: node:14
+
+stages:
+    - deploy
+
+.heroku: &heroku
+    type: deploy
+    stage: heroku
+    script:
+        - git remote add heroku https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_STAGING.git
+        - git push -f heroku HEAD:master
+    environment:
+        name: staging
+        url: https://founderphone-staging.herokuapp.com/
+
+.caprover: &caprover
+    type: deploy
+    script:
+        - npm install caprover -g
+        - caprover deploy
+
+.caprover-staging: &caprover-staging
+    <<: *caprover
+    stage: deploy
+    before_script:
+        - export CAPROVER_APP_TOKEN=$CAPROVER_APP_TOKEN_STAGING
+        - export CAPROVER_BRANCH=$CI_COMMIT_BRANCH
+        - export CAPROVER_URL=captain.caprover-root.xtendify.com
+        - export CAPROVER_APP=founderphone
+    environment:
+        name: staging
+        url: https://staging.founderphone.com
+
+.caprover-production: &caprover-production
+    <<: *caprover
+    stage: deploy
+    before_script:
+        - export CAPROVER_APP_TOKEN=$CAPROVER_APP_TOKEN_PRODUCTION
+        - export CAPROVER_BRANCH=$CI_COMMIT_BRANCH
+        - export CAPROVER_URL=captain.caprover-root.xtendify.com
+        - export CAPROVER_APP=founderphone-staging
+    environment:
+        name: production
+        url: https://app.founderphone.com
+
+# staging:
+#     <<: *caprover-staging
+#     only:
+#         - master
+
+staging-manual:
+    <<: *caprover-staging
+    when: manual
+
+# production:
+#     <<: *caprover-staging
+#     only:
+#         - master

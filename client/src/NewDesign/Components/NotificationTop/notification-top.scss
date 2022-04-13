@@ -1,0 +1,40 @@
+@import '../../colors/colors.scss';
+.top-notification-main {
+	position: relative;
+	z-index: 999;
+	.top-notification {
+		position: absolute;
+		width: 100%;
+		top: 3em;
+		right: 3em;
+		text-align: right;
+		.notification-btn {
+			background-color: $primaryyellow;
+			width: 50px;
+			height: 50px;
+			border: none;
+			outline: none;
+			border-radius: 10px;
+			&:first-child {
+				margin-right: 15px;
+			}
+			.alert-notification {
+				width: 15px;
+				height: 15px;
+				background-color: #e02c26;
+				position: absolute;
+				top: -5px;
+				right: -5px;
+				border-radius: 5px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.top-notification-main {
+		.top-notification {
+			right: 0;
+		}
+	}
+}

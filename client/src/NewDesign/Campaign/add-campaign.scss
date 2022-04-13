@@ -1,0 +1,283 @@
+@import '../colors/colors.scss';
+@import '../status/status.scss';
+.add-campaign-main {
+	padding: 30px;
+	.add-campaign-inner {
+		padding: 30px 20px;
+		position: relative;
+		height: 100%;
+		.widgets {
+			&.with-border {
+				position: relative;
+				margin-bottom: 30px;
+				padding-bottom: 30px;
+				&:after {
+					content: '';
+					position: absolute;
+					height: 1px;
+					width: 100%;
+					background-color: #000;
+					opacity: 0.1;
+					left: 0;
+					bottom: 0;
+				}
+			}
+			.form {
+				.label {
+					width: 100%;
+					text-transform: capitalize;
+					font-family: Poppins;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 15px;
+					line-height: 25px;
+					color: #797979;
+				}
+				.form-control {
+					display: inline-block;
+					width: 70%;
+					margin-left: 1em;
+					background: #ffffff;
+					border: 1px solid #f5e5d7;
+					box-sizing: border-box;
+					border-radius: 10px;
+					color: #797979;
+					font-family: Roboto;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 12px;
+					min-height: 40px;
+				}
+				.form-textarea {
+					width: 100%;
+					background: #ffffff;
+					border: 1px solid #f5e5d7;
+					box-sizing: border-box;
+					border-radius: 10px;
+					min-height: 160px;
+					padding: 20px;
+					font-family: Poppins;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 14px;
+					line-height: 21px;
+					color: rgba(0, 0, 0, 0.4);
+					margin-top: 30px;
+				}
+			}
+			&.white-boxed {
+				background-color: #fff;
+				padding: 30px 20px 25px 20px;
+				border: 1px solid #dfe0eb;
+				box-sizing: border-box;
+				border-radius: 8px;
+				.inner-title {
+					font-weight: bold;
+					font-size: 19px;
+					line-height: 28px;
+					letter-spacing: 0.4px;
+					color: #252733;
+					display: inline-block;
+				}
+				.select-all {
+					float: right;
+					margin-right: 0;
+					margin-top: 0;
+					line-height: 28px;
+					font-family: Poppins;
+					font-style: normal;
+					font-weight: 600;
+					font-size: 14px;
+					line-height: 20px;
+					text-align: right;
+					letter-spacing: 0.2px;
+					color: $primaryGreen;
+					cursor: pointer;
+				}
+				.label {
+					position: relative;
+					font-family: Poppins;
+					font-style: normal;
+					font-weight: 600;
+					font-size: 14px;
+					line-height: 20px;
+					letter-spacing: 0.2px;
+					color: #252733;
+					&.normal {
+						border-bottom: 1px solid #dfe0eb;
+					}
+					&:not(.normal) {
+						padding: 20px 0px 20px 35px;
+						border-bottom: 1px solid #dfe0eb;
+					}
+					&.icon {
+						&:before {
+							content: '';
+							position: absolute;
+							width: 20px;
+							height: 20px;
+							background-image: url('./images/search.svg');
+							background-repeat: no-repeat;
+							background-position: center center;
+							top: 20px;
+							left: 26px;
+						}
+					}
+					.form-control {
+						width: 100%;
+						margin-left: 0px;
+						background: #f8f8f8;
+						border: 1px solid #f5e5d7;
+						box-sizing: border-box;
+						border-radius: 10px;
+						font-family: Poppins;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 16px;
+						line-height: 24px;
+						align-items: center;
+						color: #bbbbbb;
+						padding: 15px 15px 15px 60px;
+						margin-bottom: 25px;
+					}
+					.checkbox {
+						position: absolute;
+						opacity: 0;
+						cursor: pointer;
+						height: 0;
+						width: 0;
+					}
+					.checkmark {
+						position: absolute;
+						top: 20px;
+						left: 0;
+						height: 20px;
+						width: 20px;
+						background-color: #fff;
+						border: 2px solid #c5c7cd;
+						box-sizing: border-box;
+						border-radius: 100px;
+						&:after {
+							content: '';
+							position: absolute;
+							display: none;
+							left: 2px;
+							top: 4px;
+							width: 12px;
+							height: 10px;
+							background-image: url('./images/check.svg');
+							background-repeat: no-repeat;
+							background-position: center center;
+						}
+					}
+					&:hover .checkbox ~ .checkmark {
+						background-color: #c5c7cd;
+						border-color: #c5c7cd;
+					}
+					.checkbox:checked ~ .checkmark {
+						background-color: $primaryGreen;
+						border-color: $primaryGreen;
+						&:after {
+							display: block;
+						}
+					}
+				}
+			}
+			.tempate-action {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				margin-top: 10px;
+				.action-item {
+					display: inline-block;
+					margin-right: 30px;
+				}
+			}
+			&.marginB50 {
+				margin-bottom: 50px;
+			}
+			&.no-border {
+				border: 0px;
+			}
+			.message-note {
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 1.6em;
+				color: #797979;
+				&.length {
+					line-height: 40px;
+				}
+			}
+		}
+		.widgets + .separator {
+			margin-top: 40px;
+			margin-bottom: 30px;
+			opacity: 0.125;
+		}
+		.main-title {
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 36px;
+			margin-bottom: 15px;
+			&.extra-bottom-space {
+				margin-bottom: 40px;
+			}
+		}
+		.inner-title {
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 30px;
+			color: #797979;
+			margin-bottom: 15px;
+		}
+		.fp-badge {
+			margin-right: 8px;
+			display: inline-block;
+			line-height: 43px;
+			margin-top: 8px;
+			.badge-item {
+				padding: 12px 18px;
+				background-color: #fff;
+				border: 1px solid #f5e5d7;
+				box-sizing: border-box;
+				border-radius: 5px;
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 14px;
+				line-height: 16px;
+				color: #797979;
+				text-decoration: none;
+				&.active {
+					color: #fff;
+					background-color: $primaryGreen;
+					border-color: $primaryGreen;
+				}
+			}
+		}
+		.save-campaign {
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 27px;
+			color: #e02c26;
+			border: none;
+			padding: 14px 0px;
+			text-decoration: none;
+			transition: all 0.3s;
+			outline: none;
+			width: 100%;
+			display: inline-block;
+			text-align: center;
+			margin-top: 16px;
+			cursor: pointer;
+		}
+	}
+}

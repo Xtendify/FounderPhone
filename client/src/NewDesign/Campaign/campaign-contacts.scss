@@ -1,0 +1,392 @@
+@import '../colors/colors.scss';
+@import '../status/status.scss';
+.campaign-contacts {
+	overflow-x: hidden;
+	position: relative;
+	width: calc(100% - 65px);
+	margin: 5em 1em 5em;
+	.campaign-contactsUser {
+		width: 20%;
+		position: relative;
+		margin-bottom: 40px;
+		&-handIcon {
+			width: 14%;
+			position: relative;
+			margin-top: -8px;
+		}
+		&-name {
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 26px;
+			line-height: 32px;
+			color: $primary;
+			margin-left: 5%;
+		}
+	}
+	.campaign-button {
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.table-main {
+		background-color: $lightbluebg;
+		border-radius: 10px;
+		.table-top {
+			padding: 45px 32px;
+			.main-title {
+				font-family: Poppins;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 19px;
+				line-height: 28px;
+				letter-spacing: 0.4px;
+				color: #000000;
+			}
+		}
+		.table {
+			&-row {
+				border-bottom: 1px solid #dfe0eb;
+				&:last-child {
+					border-color: #fff;
+				}
+			}
+			&-head-col {
+				font-family: Poppins;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 24px;
+				letter-spacing: 0.2px;
+				color: #9fa2b4;
+				padding: 16px 0;
+				&:first-child {
+					padding-left: 32px;
+				}
+			}
+			&-body-col {
+				font-family: Poppins;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 20px;
+				letter-spacing: 0.2px;
+				color: #252733;
+				vertical-align: middle;
+				padding: 25px 0;
+				&:first-child {
+					padding-left: 32px;
+				}
+				&:last-child,
+				&:nth-child(6) {
+				}
+				.user-thumb {
+					width: 44px;
+					height: 44px;
+					border-radius: 100%;
+					overflow: hidden;
+					display: inline-table;
+					margin-right: 20px;
+				}
+				.midium-text {
+					font-style: normal;
+					font-weight: 500;
+					font-size: 14px;
+					line-height: 20px;
+					letter-spacing: 0.2px;
+					margin-bottom: 0px;
+				}
+				.small-text {
+					font-family: Roboto;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 12px;
+					line-height: 16px;
+					letter-spacing: 0.1px;
+					color: #c5c7cd;
+				}
+				a {
+					svg {
+						margin: 0 10px;
+					}
+				}
+				.view-profile {
+					font-family: Poppins;
+					font-style: normal;
+					font-weight: 600;
+					font-size: 14px;
+					line-height: 20px;
+					letter-spacing: 0.2px;
+					color: #1b5060;
+					text-decoration: none;
+				}
+				.checkbox-wrap {
+					position: relative;
+					cursor: pointer;
+					user-select: none;
+					.checkbox {
+						position: absolute;
+						opacity: 0;
+						cursor: pointer;
+						height: 0;
+						width: 0;
+						&:checked ~ .checkmark {
+							background-color: $primaryGreen;
+							&:after {
+								display: block;
+							}
+						}
+					}
+					.checkmark {
+						position: absolute;
+						top: -15px;
+						left: 0;
+						height: 20px;
+						width: 20px;
+						background: #ffffff;
+						border: 1px solid rgba(0, 0, 0, 0.2);
+						box-sizing: border-box;
+						border-radius: 3px;
+						&:after {
+							content: '';
+							position: absolute;
+							display: none;
+							left: -1px;
+							top: 0px;
+							width: 20px;
+							height: 20px;
+							background-image: url('./images/check.svg');
+							background-repeat: no-repeat;
+							background-position: center center;
+						}
+					}
+				}
+			}
+		}
+	}
+	.dropdown-campaign {
+		background-color: $primaryGreen;
+		border-color: $primaryGreen;
+		border-radius: 5px;
+		border: none;
+		width: 155px;
+		height: 50px;
+		padding-top: 6px;
+		.dropdown-button {
+			background-color: $primaryGreen;
+			border-color: $primaryGreen;
+			&:hover {
+				background-color: $primaryGreen;
+				border-color: $primaryGreen;
+			}
+			&:focus {
+				background-color: $primaryGreen;
+				border-color: $primaryGreen;
+				box-shadow: none !important;
+				outline: none;
+			}
+			&.active {
+				background-color: $primaryGreen;
+				border-color: $primaryGreen;
+			}
+		}
+
+		.dropdown-menu {
+			color: 1px solid #f5e5d7;
+			min-width: 155px;
+			top: 50px;
+			left: -10px;
+			padding: 15px auto auto 18px;
+			border: none;
+			transform: none;
+			&.show {
+				box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+				transform: translate(0px, 50px) !important;
+				border-radius: 5px;
+				font-family: Poppins;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 20px;
+				letter-spacing: 0.2px;
+				color: #1b5060;
+
+				.dropdown-item {
+					border-radius: 50px;
+					line-height: 1.6;
+					padding: 5px 15px;
+					color: #1b5060;
+					font-family: Poppins;
+					font-style: normal;
+					text-align: center;
+					font-weight: 500;
+					font-size: 18px;
+					line-height: 20px;
+					letter-spacing: 0.2px;
+					&:active {
+						background-color: white;
+						color: #1b5060;
+					}
+					&:hover {
+						background-color: none;
+						border-radius: 0%;
+					}
+				}
+			}
+		}
+
+		.underline {
+			color: $primary;
+			margin-top: 4px;
+			margin-bottom: 10px;
+		}
+		.dropdown-icon {
+			width: 25px;
+			height: 25px;
+		}
+	}
+	.how-it-works {
+		width: 100%;
+		background: #edf8f4;
+		border-radius: 10px;
+		padding: 60px 50px;
+		position: relative;
+		.title {
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 26px;
+			line-height: 39px;
+			color: #000000;
+			margin-bottom: 0.5em;
+		}
+		.title-img {
+			margin-right: 10px;
+			margin-bottom: 10px;
+			height: 40px;
+			width: 40px;
+		}
+		p {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 1.6em;
+			color: #797979;
+			margin-bottom: 0.5em;
+		}
+	}
+	.table-top {
+		padding: 45px 32px;
+		h4 {
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 26px;
+			line-height: 39px;
+			letter-spacing: 0.4px;
+			color: #000000;
+		}
+	}
+	.table-main-no {
+		background-color: $lightbluebg;
+		border-radius: 10px;
+		margin-top: 50px;
+		.less-radius-no {
+			border: 1px solid rgba(0, 0, 0, 0.1);
+			border-radius: 5px;
+			font-size: 14px;
+			line-height: 20px;
+			background-color: $primaryGreen;
+			white-space: nowrap;
+			border-color: $primaryGreen;
+			&:hover {
+				transform: none;
+			}
+		}
+		.less-width {
+			width: 157px;
+			height: 54px;
+			padding-top: 5px;
+		}
+		.title-no {
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 22px;
+			line-height: 33px;
+			letter-spacing: 0.4px;
+			color: #000000;
+		}
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	.campaign-contacts {
+		.table-main {
+			.table {
+				min-width: 880px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.campaign-contacts {
+		margin: 7em 0 3em;
+		width: 100%;
+		.table-main {
+			.table {
+				min-width: 750px;
+				td {
+					font-size: 14px;
+					&:first-child {
+						padding-left: 20px;
+						padding-right: 20px;
+					}
+					&:nth-child(4) {
+						padding-left: 10px;
+						padding-right: 10px;
+					}
+					a {
+						svg {
+							margin: 0px 5px;
+							width: 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.campaign-contacts {
+		.campaign-button {
+			margin-bottom: 10px;
+		}
+		.campaign-contactsUser-handIcon {
+			max-width: 30px;
+		}
+		.campaign-contactsUser-name {
+			margin-left: 20px;
+		}
+		.campaign-contactsUser {
+			width: 100%;
+		}
+		.table-main {
+			.table {
+				min-width: 680px;
+				th:first-child {
+					padding-left: 20px;
+				}
+			}
+			.table-top {
+				padding: 33px 20px;
+				h4 {
+					margin-bottom: 25px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,243 @@
+@import '../colors/colors.scss';
+.billing {
+	position: relative;
+	width: calc(100% - 65px);
+	margin: 5em 1em 5em;
+	.billingUser {
+		width: 20%;
+		position: relative;
+		margin-bottom: 40px;
+		&-handIcon {
+			width: 14%;
+			position: relative;
+			margin-top: -8px;
+		}
+		&-name {
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 26px;
+			line-height: 32px;
+			color: $primary;
+			margin-left: 5%;
+		}
+	}
+	.update-detail-summary {
+		width: 100%;
+		background: #edf8f4;
+		border-radius: 10px;
+		padding: 60px 50px;
+		position: relative;
+		.title {
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 26px;
+			line-height: 39px;
+			color: #000000;
+			margin-bottom: 0.5em;
+		}
+		.title-img {
+			margin-right: 15px;
+			margin-bottom: 10px;
+			width: 37px;
+		}
+		p {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 1.6em;
+			color: #797979;
+			margin-bottom: 0.5em;
+			a {
+				color: $primary;
+				font-weight: 600;
+				text-decoration: none;
+			}
+		}
+		&-thumb-area {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			.image {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+			}
+		}
+	}
+	.customer-plan-summary {
+		background-color: $lightbluebg;
+		padding: 50px;
+		margin-top: 30px;
+		border-radius: 10px;
+		.plan-main-title {
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 22px;
+			line-height: 33px;
+			color: #000000;
+			.plan-price {
+				font-size: 20px;
+				font-weight: 500;
+				.plan-price-highlight {
+					font-size: 42px;
+					font-weight: bold;
+					color: $primaryBlue;
+				}
+			}
+		}
+		.plan-includes-title {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			color: #000000;
+			padding: 34px 0px;
+			margin-bottom: 0px;
+		}
+		.plan-includes-item {
+			padding: 20px 30px;
+			position: relative;
+			font-family: Poppins;
+			font-style: normal;
+			background-color: #fff;
+			border-radius: 10px;
+			margin-bottom: 20px;
+			.plan-item-icon {
+				position: absolute;
+				left: 30px;
+				top: 50%;
+				width: 25px;
+				margin-top: -12.5px;
+			}
+			.plan-item-content {
+				position: relative;
+				padding-left: 40px;
+				font-size: 18px;
+				.plan-item-title {
+					font-weight: bold;
+					margin-bottom: 0px;
+					line-height: 1.2;
+				}
+				.plan-item-description {
+					font-weight: 300;
+				}
+			}
+		}
+	}
+	.plan-upgrade-area {
+		background-color: $lightbluebg;
+		padding: 50px;
+		margin-top: 30px;
+		border-radius: 10px;
+		.plan-upgrade-main-title {
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 22px;
+			line-height: 33px;
+			color: #000000;
+		}
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	.billing {
+		width: 100%;
+		.billingUser {
+			width: 30%;
+		}
+		.customer-plan-summary {
+			.plan-includes-item {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.billing {
+		margin: 5em 0;
+		width: 100%;
+		.billingUser {
+			margin-top: 45px;
+		}
+		.customer-plan-summary {
+			.plan-includes-item {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+	.billing {
+		margin: 5em 0;
+		width: 100%;
+		.billingUser {
+			width: 30%;
+			margin-top: 45px;
+		}
+		.update-detail-summary {
+			.less-radius {
+				font-size: 12px;
+				padding: 15px 25px;
+			}
+			.image {
+				min-width: 100%;
+				bottom: 0;
+				right: 0;
+			}
+		}
+		.customer-plan-summary {
+			.plan-main-title {
+				margin-top: 20px;
+			}
+			.plan-includes-item {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.billing {
+		margin: 5em 0;
+		width: 100%;
+		.billingUser {
+			width: 60%;
+			margin-top: 40px;
+		}
+		.update-detail-summary {
+			padding: 30px 20px;
+			.image {
+				position: relative;
+				max-width: 100%;
+				min-width: 100%;
+				right: 0;
+			}
+			.less-radius {
+				margin-bottom: 10px;
+			}
+		}
+		.customer-plan-summary {
+			padding: 25px 20px;
+			.plan-main-title {
+				margin-top: 5px;
+			}
+			.plan-includes-item {
+				margin-bottom: 10px;
+				padding: 18px 24px;
+			}
+		}
+		.plan-upgrade-area {
+			padding: 20px;
+		}
+		.plan-save {
+			margin-bottom: 40px;
+		}
+	}
+}

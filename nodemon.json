@@ -1,0 +1,9 @@
+{
+    "exec": "npm run src:run",
+    "watch": [
+        "src/*",
+        "public/*",
+        ".env"
+    ],
+    "ext": "js, html, css, json"
+}

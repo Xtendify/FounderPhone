@@ -1,0 +1,263 @@
+@import '../colors/colors.scss';
+@import '../status/status.scss';
+.campaign {
+	position: relative;
+	width: calc(100% - 65px);
+	margin: 5em 1em 5em;
+	overflow-x: hidden;
+	.campaignUser {
+		width: 20%;
+		position: relative;
+		margin-bottom: 40px;
+		&-handIcon {
+			width: 14%;
+			position: relative;
+			margin-top: -8px;
+		}
+		&-name {
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 26px;
+			line-height: 32px;
+			color: $primary;
+			margin-left: 5%;
+		}
+	}
+	.table-main {
+		background-color: $lightbluebg;
+		border-radius: 10px;
+	}
+	.data-null {
+		font-family: Poppins;
+		padding-left: 20px;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 100px;
+		letter-spacing: 0.4px;
+	}
+	.table-top {
+		padding: 45px 32px;
+		h4 {
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 26px;
+			line-height: 39px;
+			letter-spacing: 0.4px;
+			color: #000000;
+		}
+	}
+	.table > :not(:last-child) > :last-child > * {
+		border-color: #dfe0eb;
+	}
+	table {
+		tr {
+			border-bottom: 1px solid #dfe0eb;
+			&:last-child {
+				border-color: #fff;
+			}
+		}
+		th {
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 24px;
+			letter-spacing: 0.2px;
+			color: #9fa2b4;
+			padding: 16px 0;
+			&:first-child {
+				padding-left: 32px;
+			}
+		}
+		td {
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 20px;
+			letter-spacing: 0.2px;
+			color: #252733;
+			vertical-align: middle;
+			padding: 25px 0;
+			&:first-child {
+				padding-left: 32px;
+			}
+			&:last-child,
+			&:nth-child(4) {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+			p {
+				font-style: normal;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 20px;
+				letter-spacing: 0.2px;
+				margin-bottom: 0px;
+			}
+			span {
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 12px;
+				line-height: 16px;
+				letter-spacing: 0.1px;
+				color: #c5c7cd;
+			}
+			a {
+				svg {
+					margin: 0 10px;
+				}
+			}
+		}
+	}
+	.how-it-works {
+		width: 100%;
+		background: #edf8f4;
+		border-radius: 10px;
+		padding: 60px 50px;
+		position: relative;
+		.title {
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 26px;
+			line-height: 39px;
+			color: #000000;
+			margin-bottom: 0.5em;
+		}
+		.title-img {
+			margin-right: 10px;
+			margin-bottom: 10px;
+			height: 40px;
+			width: 40px;
+		}
+		.atractive-items {
+			color: $primary;
+			font-weight: bold;
+			text-decoration: none;
+		}
+		.coldfaceicon {
+			width: 35px;
+		}
+		p {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 1.6em;
+			color: #797979;
+			margin-bottom: 0.5em;
+			a {
+				color: $primary;
+				font-weight: 600;
+				text-decoration: none;
+			}
+		}
+		&-thumb-area {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			.image {
+				position: absolute;
+				bottom: -60px;
+			}
+		}
+		.setup-notpaid {
+			padding-bottom: 30px;
+		}
+	}
+	.table-main-no {
+		background-color: $lightbluebg;
+		border-radius: 10px;
+		margin-top: 46px;
+		.less-radius-no {
+			border: 1px solid rgba(0, 0, 0, 0.1);
+			border-radius: 5px;
+		}
+		.title-no {
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 22px;
+			line-height: 33px;
+			letter-spacing: 0.4px;
+			color: #000000;
+		}
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	.campaign {
+		width: calc(100% - 30px);
+		margin: 8.5em 0 5em;
+		.table-main {
+			.table {
+				min-width: 800px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.campaign {
+		margin: 7em 0 3em;
+		width: 100%;
+		.table-main {
+			.table {
+				td {
+					font-size: 14px;
+					&:first-child {
+						padding-left: 20px;
+						padding-right: 20px;
+					}
+					&:nth-child(4) {
+						padding-left: 10px;
+						padding-right: 10px;
+					}
+					a {
+						svg {
+							margin: 0px 5px;
+							width: 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.campaign {
+		.campaignUser {
+			width: 100%;
+		}
+		.table-main {
+			.table {
+				min-width: 680px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.campaign {
+		.campaignUser {
+			margin-bottom: 20px;
+		}
+		.table-top {
+			padding: 33px 20px;
+			h4 {
+				margin-bottom: 25px;
+			}
+		}
+		table {
+			th:first-child {
+				padding-left: 20px;
+			}
+		}
+	}
+}
