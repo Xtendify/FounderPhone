@@ -24,11 +24,10 @@ A clear and concise description of what you expected to happen.
 If applicable, add screenshots to help explain your problem.
 
 **Device (please complete the following information):**
-
-Device: [e.g. iPhone6/Macbook]
-OS: [e.g. iOS/MacOS]
-Browser [e.g. chrome, safari]
-Version [e.g. 22]
+ - Device: [e.g. iPhone6/Macbook]
+ - OS: [e.g. iOS/MacOS]
+ - Browser [e.g. chrome, safari]
+ - Version [e.g. 22]
 
 **Additional context**
 Add any other context about the problem here.
