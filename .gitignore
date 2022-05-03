@@ -60,6 +60,7 @@ typings/
 config.txt
 .envrc
 .envrc.*
+!.env.example
 
 # next.js build output
 .next
