@@ -20,7 +20,7 @@ NodeJS 14.x and NPM v8.x version
 
 # Clone & Setup
 
-Run `git clone git@gitlab.com:xtendify/founderphone/founderphone.git && cd founderphone`.
+Run `git clone https://github.com/Xtendify/FounderPhone.git && cd FounderPhone`.
 
 Run `npm run setup`.
 
