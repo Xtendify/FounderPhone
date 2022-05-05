@@ -30,9 +30,7 @@ Run `npm run setup`.
 
 ## Populating env variables
 
-We need to use tunnel so that we can forward API requests from Slack & Twilio to localhost. (You can use NgRok for the same, run `ngrok http 3001` or https://www.npmjs.com/package/localtunnel, run `lt --port 3001`).
-
-Choose your env variables from https://gitlab.com/xtendify/founderphone/founderphone/-/wikis/Available-Slack-Apps-and-Tunnels (do not use variables which has user assigned to it and whichever you choose assign your name after it). Replace `SERVER_URL`, `SLACK_CLIENT_ID` and `SLACK_CLIENT_SECRET` in `.env` file.
+We need to use tunnel so that we can forward API requests from Slack & Twilio to localhost. (You can use NgRok for the same, run `ngrok http 3001` or https://www.npmjs.com/package/localtunnel, run `lt --port 3001`). Populate `SERVER_URL` based on the same.
 
 ## Start Server
 
@@ -47,7 +45,7 @@ Run `cd client && npm run dev` to start client.
 ---
 
 # Create Pull Request
-Push your changes under branch `issue/<123>`. Create a pull request merging your changes to `master` and requesting review from fellow contributors.
+Fork the repository, make your changes and create a pull request merging your changes to `master`.
 
 ---
 
@@ -55,5 +53,5 @@ Push your changes under branch `issue/<123>`. Create a pull request merging your
 
 ## Local tunnel URL changes
 - Update `SERVER_URL` in .env file and restart server.
-- Update `App Manifest` with new domain in Slack App. Do not update full URL. (Ask Rohit for access)
-- Update `Active Configuration` for your number in [Twilio](https://console.twilio.com/us1/develop/phone-numbers/manage/active). (Ask Rohit for access)
+- Update `App Manifest` with new domain in Slack App. Do not update full URL.
+- Update `Active Configuration` for your number in [Twilio](https://console.twilio.com/us1/develop/phone-numbers/manage/active).
