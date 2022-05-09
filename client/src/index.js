@@ -6,9 +6,8 @@ import * as serviceWorker from './serviceWorker';
 import firebase from 'firebase/app';
 import '@firebase/messaging';
 // import "firebase/analytics";
-import config from './Config/firebaseKeys';
 
-firebase.initializeApp(config);
+firebase.initializeApp(process.env.REACT_APP_FIREBASE_CONFIG);
 // firebase.analytics();
 
 ReactDOM.render(<App />, document.getElementById('root'));
