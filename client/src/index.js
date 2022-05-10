@@ -7,6 +7,8 @@ import firebase from 'firebase/app';
 import '@firebase/messaging';
 // import "firebase/analytics";
 
+console.log(process.env, JSON.parse(process.env.REACT_APP_FIREBASE_CONFIG));
+
 firebase.initializeApp(process.env.REACT_APP_FIREBASE_CONFIG);
 // firebase.analytics();
 
