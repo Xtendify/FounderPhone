@@ -8,7 +8,7 @@
     "@material-ui/lab": "^4.0.0-alpha.57",
     "@openreplay/tracker": "^3.4.16",
     "@sentry/browser": "^6.2.3",
-    "apisauce": "^2.0.1",
+    "apisauce": "^2.1.5",
     "axios": "^0.21.4",
     "bootstrap": "^5.0.0",
     "emoji-picker-react": "^3.4.3",
