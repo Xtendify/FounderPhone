@@ -60,7 +60,7 @@
     "morgan": "~1.10.0",
     "parse-full-name": "^1.2.5",
     "prettier": "^2.2.1",
-    "query-string": "^7.0.0",
+    "query-string": "^7.1.1",
     "react-ga": "^3.3.0",
     "regenerator-runtime": "^0.13.7",
     "request": "^2.88.0",
