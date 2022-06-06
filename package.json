@@ -58,7 +58,7 @@
     "moment": "^2.29.3",
     "mongoose": "^5.12.14",
     "morgan": "~1.10.0",
-    "parse-full-name": "^1.2.5",
+    "parse-full-name": "^1.2.6",
     "prettier": "^2.2.1",
     "query-string": "^7.1.1",
     "react-ga": "^3.3.0",
