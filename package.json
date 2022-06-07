@@ -54,7 +54,7 @@
     "lint-staged": "^10.5.4",
     "mailchimp-api-v3": "^1.15.0",
     "map-o": "^2.0.10",
-    "mixpanel": "^0.13.0",
+    "mixpanel": "^0.16.0",
     "moment": "^2.29.3",
     "mongoose": "^5.12.14",
     "morgan": "~1.10.0",
