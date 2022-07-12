@@ -67,7 +67,7 @@
     "rimraf": "^3.0.2",
     "sib-api-v3-sdk": "^8.2.1",
     "slack": "^11.0.2",
-    "stripe": "^8.138.0",
+    "stripe": "^9.13.0",
     "twilio": "^3.77.2",
     "underscore": "^1.13.4",
     "underscore.string": "^3.3.5"
