@@ -7,7 +7,7 @@
     "@material-ui/icons": "^4.11.3",
     "@material-ui/lab": "^4.0.0-alpha.57",
     "@openreplay/tracker": "^3.5.12",
-    "@sentry/browser": "^6.2.3",
+    "@sentry/browser": "^7.8.0",
     "apisauce": "^2.1.5",
     "axios": "^0.27.2",
     "bootstrap": "^5.1.3",
